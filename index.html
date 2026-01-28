@@ -36,7 +36,7 @@
             display: flex;
             gap: 40px;
             align-items: flex-start;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
             border-bottom: 1px solid #eee;
             padding-bottom: 40px;
         }
@@ -44,7 +44,7 @@
         .profile-photo {
             width: 160px;
             height: 160px;
-            border-radius: 50%; /* Make circular */
+            border-radius: 50%; 
             object-fit: cover;
             background-color: #f0f0f0;
             flex-shrink: 0;
@@ -62,6 +62,10 @@
             font-weight: 400;
             color: var(--light-text);
             margin-top: 0;
+        }
+
+        .social-links {
+            margin-top: 15px;
         }
 
         .social-links a {
@@ -88,6 +92,22 @@
             color: var(--primary-color);
         }
 
+        /* Project / Software Badges */
+        .project-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .project-item a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        .project-desc {
+            color: var(--text-color);
+        }
+
         /* News List */
         ul.news-list {
             list-style: none;
@@ -98,10 +118,11 @@
             display: flex;
         }
         .date {
-            min-width: 100px;
+            min-width: 110px;
             font-weight: bold;
             color: var(--primary-color);
             font-family: monospace; /* Academic style dates */
+            flex-shrink: 0;
         }
 
         /* Publication List */
@@ -139,6 +160,7 @@
             header { flex-direction: column-reverse; align-items: center; text-align: center; }
             .profile-photo { width: 120px; height: 120px; margin-bottom: 20px; }
             .date { min-width: 80px; }
+            ul.news-list li { flex-direction: column; }
         }
     </style>
 </head>
@@ -157,7 +179,10 @@
             <p>
                 My primary research focuses on <strong>agentic LLM post-training</strong>, specifically utilizing autonomous agents 
                 to automate and scale reinforcement learning workflows. I also develop frameworks for general end-to-end machine learning automation, 
-                such as <a href="https://project-mlzero.github.io/" style="color:#0066cc;">MLZero</a>.
+                such as <a href="https://github.com/autogluon/autogluon-assistant" style="color:#0066cc;">AutoGluon Assistant</a> (aka MLZero).
+            </p>
+            <p>
+                I am also a core developer of <strong>AutoGluon Multimodal</strong>.
             </p>
             
             <div class="social-links">
@@ -168,19 +193,52 @@
             </div>
         </div>
         
-        <img src="photo.jpg" alt="Haoyang Fang" class="profile-photo">
+        <img src="badge_photo_haoyang.jpg" alt="Haoyang Fang" class="profile-photo">
     </header>
+
+    <section>
+        <h2>🛠️ Software & Projects</h2>
+        
+        <div class="project-item">
+            <a href="https://github.com/autogluon/autogluon">AutoGluon</a>
+            <a href="https://github.com/autogluon/autogluon"><img src="https://img.shields.io/github/stars/autogluon/autogluon?style=social" alt="AutoGluon Stars"></a>
+            <span class="project-desc">– Fast and Accurate ML in 3 Lines of Code.</span>
+        </div>
+
+        <div class="project-item">
+            <a href="https://github.com/autogluon/autogluon-assistant">AutoGluon Assistant (MLZero)</a>
+            <a href="https://github.com/autogluon/autogluon-assistant"><img src="https://img.shields.io/github/stars/autogluon/autogluon-assistant?style=social" alt="AutoGluon Assistant Stars"></a>
+            <span class="project-desc">– Multi-Agent System Powered by LLMs for End-to-end ML Automation.</span>
+        </div>
+    </section>
 
     <section>
         <h2>🔥 News</h2>
         <ul class="news-list">
+             <li>
+                <span class="date">Nov 2025</span>
+                <span>Hosting <strong>AutoGluon Workshop</strong> @ <strong>Re:invent 2025</strong>.</span>
+            </li>
             <li>
-                <span class="date">May 2025</span>
-                <span>Our paper on <strong>MLZero</strong> (Multi-Agent System for ML Automation) was accepted to <strong>NeurIPS 2025</strong>.</span>
+                <span class="date">Nov 2025</span>
+                <span>Our paper on <strong>MLZero</strong> (AutoGluon Assistant) was accepted to <strong>NeurIPS 2025</strong>. 
+                <a href="https://www.amazon.science/publications/mlzero-a-multi-agent-system-for-automated-end-to-end-machine-learning-solutions" style="color:#0066cc;">[Amazon Science Blog]</a></span>
+            </li>
+            <li>
+                <span class="date">Nov 2025</span>
+                <span>Contributed Talk @ <strong>AMLC Workshop</strong>: 2nd Gen-AI Autonomous Agents.</span>
+            </li>
+            <li>
+                <span class="date">Nov 2025</span>
+                <span>Poster Presentation @ <strong>Stanford Graph Learning Workshop 2025</strong>.</span>
             </li>
             <li>
                 <span class="date">Jul 2024</span>
                 <span>Paper on <strong>AutoGluon-Multimodal (AutoMM)</strong> accepted to <strong>AutoML 2024</strong>.</span>
+            </li>
+            <li>
+                <span class="date">Jan 2024</span>
+                <span><strong>Conv-LoRA</strong> accepted to <strong>ICLR 2024</strong>.</span>
             </li>
             <li>
                 <span class="date">Jan 2024</span>
@@ -200,8 +258,8 @@
             <div class="publication-venue">NeurIPS 2025</div>
             <div class="publication-links">
                 <a href="https://arxiv.org/abs/2505.13941">PDF</a>
-                <a href="https://project-mlzero.github.io/">Project Page</a>
-                <a href="https://github.com/FANGAreNotGnu/MLZero">Code</a>
+                <a href="https://www.amazon.science/publications/mlzero-a-multi-agent-system-for-automated-end-to-end-machine-learning-solutions">Blog</a>
+                <a href="https://github.com/autogluon/autogluon-assistant">Code</a>
             </div>
         </div>
 
