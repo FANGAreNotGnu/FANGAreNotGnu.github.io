@@ -79,26 +79,10 @@
             text-decoration: underline;
         }
         
-        /* Project Badges in Header */
-        .project-badges {
-            margin-top: 15px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .project-badge-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.95rem;
-        }
-        .project-badge-item a {
-            text-decoration: none;
-            color: var(--primary-color); 
-            font-weight: 600;
-        }
-        .project-badge-item a:hover {
-            color: var(--accent-color);
+        /* Inline Badge Styles */
+        .badge-icon {
+            vertical-align: text-bottom;
+            margin-left: 4px;
         }
 
         /* Sections */
@@ -167,7 +151,6 @@
             .profile-photo { width: 120px; height: 120px; margin-bottom: 20px; }
             .date { min-width: 80px; }
             ul.news-list li { flex-direction: column; }
-            .project-badges { justify-content: center; }
         }
     </style>
 </head>
@@ -186,25 +169,16 @@
             <p>
                 My primary research focuses on <strong>agentic LLM post-training</strong>, specifically <strong>building</strong> autonomous agents 
                 to automate and scale reinforcement learning workflows. I also develop frameworks for general end-to-end machine learning automation, 
-                such as <a href="https://github.com/autogluon/autogluon-assistant" style="color:#0066cc;">AutoGluon Assistant</a> (aka MLZero).
+                such as <a href="https://github.com/autogluon/autogluon-assistant" style="color:#0066cc;">AutoGluon Assistant</a> (aka MLZero)
+                <a href="https://github.com/autogluon/autogluon-assistant"><img src="https://img.shields.io/github/stars/autogluon/autogluon-assistant?style=social" alt="Assistant Stars" class="badge-icon"></a>.
             </p>
             <p>
-                I am also a core developer of <strong>AutoGluon Multimodal</strong>.
+                Previously, I developed <strong>AutoGluon Multimodal</strong> from release 0.7 to 1.5
+                <a href="https://github.com/autogluon/autogluon"><img src="https://img.shields.io/github/stars/autogluon/autogluon?style=social" alt="AutoGluon Stars" class="badge-icon"></a>.
             </p>
             
-            <div class="project-badges">
-                <div class="project-badge-item">
-                    <a href="https://github.com/autogluon/autogluon">AutoGluon</a>
-                    <a href="https://github.com/autogluon/autogluon"><img src="https://img.shields.io/github/stars/autogluon/autogluon?style=social" alt="AutoGluon Stars"></a>
-                </div>
-                <div class="project-badge-item">
-                    <a href="https://github.com/autogluon/autogluon-assistant">AutoGluon Assistant</a>
-                    <a href="https://github.com/autogluon/autogluon-assistant"><img src="https://img.shields.io/github/stars/autogluon/autogluon-assistant?style=social" alt="Assistant Stars"></a>
-                </div>
-            </div>
-
             <div class="social-links">
-                <a href="mailto:your-email@amazon.com">Email</a>
+                <a href="mailto:kevinfang97@gmail.com">Email</a>
                 <a href="https://scholar.google.com/citations?user=_PA_5_kAAAAJ&hl=zh-CN">Google Scholar</a>
                 <a href="https://github.com/FANGAreNotGnu">GitHub</a>
                 <a href="https://www.linkedin.com/in/haoyang-fang">LinkedIn</a>
@@ -217,14 +191,25 @@
     <section>
         <h2>🔥 News</h2>
         <ul class="news-list">
+            <li>
+                <span class="date">Mar 2026</span>
+                <span>One paper accepted by <strong>AISTATS 2026</strong>.</span>
+            </li>
+            <li>
+                <span class="date">Dec 2025</span>
+                <span><strong>"Table Retrieval and Understanding with MLLMs"</strong> accepted by <strong>EACL 2026 Findings</strong>.</span>
+            </li>
              <li>
                 <span class="date">Nov 2025</span>
                 <span>Hosting <strong>AutoGluon Workshop</strong> @ <strong>Re:invent 2025</strong>.</span>
             </li>
             <li>
                 <span class="date">Nov 2025</span>
-                <span>Our paper on <strong>MLZero</strong> (AutoGluon Assistant) was accepted to <strong>NeurIPS 2025</strong>. 
-                <a href="https://www.amazon.science/publications/mlzero-a-multi-agent-system-for-automated-end-to-end-machine-learning-solutions" style="color:#0066cc;">[Amazon Science Blog]</a></span>
+                <span>Featured in <strong>Amazon Science Blog</strong>: <a href="https://www.amazon.science/publications/mlzero-a-multi-agent-system-for-automated-end-to-end-machine-learning-solutions" style="color:#0066cc;">MLZero: A multi-agent system for automated end-to-end machine learning solutions</a>.</span>
+            </li>
+            <li>
+                <span class="date">Nov 2025</span>
+                <span>Our paper on <strong>MLZero</strong> (AutoGluon Assistant) was accepted to <strong>NeurIPS 2025</strong>.</span>
             </li>
             <li>
                 <span class="date">Nov 2025</span>
