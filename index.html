@@ -78,6 +78,28 @@
         .social-links a:hover {
             text-decoration: underline;
         }
+        
+        /* Project Badges in Header */
+        .project-badges {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .project-badge-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+        .project-badge-item a {
+            text-decoration: none;
+            color: var(--primary-color); 
+            font-weight: 600;
+        }
+        .project-badge-item a:hover {
+            color: var(--accent-color);
+        }
 
         /* Sections */
         section {
@@ -90,22 +112,6 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
             color: var(--primary-color);
-        }
-
-        /* Project / Software Badges */
-        .project-item {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .project-item a {
-            text-decoration: none;
-            color: var(--accent-color);
-            font-weight: 600;
-        }
-        .project-desc {
-            color: var(--text-color);
         }
 
         /* News List */
@@ -161,6 +167,7 @@
             .profile-photo { width: 120px; height: 120px; margin-bottom: 20px; }
             .date { min-width: 80px; }
             ul.news-list li { flex-direction: column; }
+            .project-badges { justify-content: center; }
         }
     </style>
 </head>
@@ -177,7 +184,7 @@
                 My research interests span <strong>Reinforcement Learning</strong>, <strong>Agentic Coding</strong>, and <strong>LLM Post-training</strong>.
             </p>
             <p>
-                My primary research focuses on <strong>agentic LLM post-training</strong>, specifically utilizing autonomous agents 
+                My primary research focuses on <strong>agentic LLM post-training</strong>, specifically <strong>building</strong> autonomous agents 
                 to automate and scale reinforcement learning workflows. I also develop frameworks for general end-to-end machine learning automation, 
                 such as <a href="https://github.com/autogluon/autogluon-assistant" style="color:#0066cc;">AutoGluon Assistant</a> (aka MLZero).
             </p>
@@ -185,6 +192,17 @@
                 I am also a core developer of <strong>AutoGluon Multimodal</strong>.
             </p>
             
+            <div class="project-badges">
+                <div class="project-badge-item">
+                    <a href="https://github.com/autogluon/autogluon">AutoGluon</a>
+                    <a href="https://github.com/autogluon/autogluon"><img src="https://img.shields.io/github/stars/autogluon/autogluon?style=social" alt="AutoGluon Stars"></a>
+                </div>
+                <div class="project-badge-item">
+                    <a href="https://github.com/autogluon/autogluon-assistant">AutoGluon Assistant</a>
+                    <a href="https://github.com/autogluon/autogluon-assistant"><img src="https://img.shields.io/github/stars/autogluon/autogluon-assistant?style=social" alt="Assistant Stars"></a>
+                </div>
+            </div>
+
             <div class="social-links">
                 <a href="mailto:your-email@amazon.com">Email</a>
                 <a href="https://scholar.google.com/citations?user=_PA_5_kAAAAJ&hl=zh-CN">Google Scholar</a>
@@ -195,22 +213,6 @@
         
         <img src="badge_photo_haoyang.jpg" alt="Haoyang Fang" class="profile-photo">
     </header>
-
-    <section>
-        <h2>🛠️ Software & Projects</h2>
-        
-        <div class="project-item">
-            <a href="https://github.com/autogluon/autogluon">AutoGluon</a>
-            <a href="https://github.com/autogluon/autogluon"><img src="https://img.shields.io/github/stars/autogluon/autogluon?style=social" alt="AutoGluon Stars"></a>
-            <span class="project-desc">– Fast and Accurate ML in 3 Lines of Code.</span>
-        </div>
-
-        <div class="project-item">
-            <a href="https://github.com/autogluon/autogluon-assistant">AutoGluon Assistant (MLZero)</a>
-            <a href="https://github.com/autogluon/autogluon-assistant"><img src="https://img.shields.io/github/stars/autogluon/autogluon-assistant?style=social" alt="AutoGluon Assistant Stars"></a>
-            <span class="project-desc">– Multi-Agent System Powered by LLMs for End-to-end ML Automation.</span>
-        </div>
-    </section>
 
     <section>
         <h2>🔥 News</h2>
