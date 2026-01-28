@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haoyang Fang | AWS AutoGluon</title>
+    <meta name="description" content="Academic personal page of Haoyang Fang, Applied Scientist at AWS AutoGluon.">
+    
+    <style>
+        :root {
+            --primary-color: #333;
+            --accent-color: #0066cc;
+            --bg-color: #ffffff;
+            --text-color: #444;
+            --light-text: #666;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header / Bio Section */
+        header {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 40px;
+        }
+
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%; /* Make circular */
+            object-fit: cover;
+            background-color: #f0f0f0;
+            flex-shrink: 0;
+        }
+
+        .bio-text h1 {
+            margin-top: 0;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .bio-text h3 {
+            font-weight: 400;
+            color: var(--light-text);
+            margin-top: 0;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        /* News List */
+        ul.news-list {
+            list-style: none;
+            padding: 0;
+        }
+        ul.news-list li {
+            margin-bottom: 12px;
+            display: flex;
+        }
+        .date {
+            min-width: 100px;
+            font-weight: bold;
+            color: var(--primary-color);
+            font-family: monospace; /* Academic style dates */
+        }
+
+        /* Publication List */
+        .publication {
+            margin-bottom: 25px;
+        }
+        .publication-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+        .publication-authors {
+            color: var(--light-text);
+            margin: 4px 0;
+        }
+        .publication-venue {
+            font-style: italic;
+            color: var(--primary-color);
+        }
+        .publication-links a {
+            font-size: 0.9rem;
+            margin-right: 10px;
+            color: var(--accent-color);
+            text-decoration: none;
+            border: 1px solid #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .publication-links a:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header { flex-direction: column-reverse; align-items: center; text-align: center; }
+            .profile-photo { width: 120px; height: 120px; margin-bottom: 20px; }
+            .date { min-width: 80px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="bio-text">
+            <h1>Haoyang Fang (方浩扬)</h1>
+            <h3>Applied Scientist @ <a href="https://github.com/awslabs/autogluon" style="color:inherit;">AWS AutoGluon</a></h3>
+            <p>
+                I am an Applied Scientist based in Seattle, working on democratizing machine learning through automated systems. 
+                My research interests span <strong>Machine Learning Engineering (MLE)</strong>, <strong>Agentic Coding</strong>, and <strong>LLM Post-training</strong>.
+            </p>
+            <p>
+                Currently, I am focused on building robust Multi-Agent Systems (MAS) like <a href="https://project-mlzero.github.io/" style="color:#0066cc;">MLZero</a> 
+                that can autonomously handle end-to-end machine learning workflows.
+            </p>
+            
+            <div class="social-links">
+                <a href="mailto:your-email@amazon.com">Email</a>
+                <a href="https://scholar.google.com/citations?user=_PA_5_kAAAAJ&hl=zh-CN">Google Scholar</a>
+                <a href="https://github.com/FANGAreNotGnu">GitHub</a>
+                <a href="https://www.linkedin.com/in/haoyang-fang">LinkedIn</a>
+            </div>
+        </div>
+        
+        <img src="https://avatars.githubusercontent.com/u/YOUR_GITHUB_ID?v=4" alt="Haoyang Fang" class="profile-photo">
+    </header>
+
+    <section>
+        <h2>🔥 News</h2>
+        <ul class="news-list">
+            <li>
+                <span class="date">May 2025</span>
+                <span>Our paper on <strong>MLZero</strong> (Multi-Agent System for ML Automation) was accepted to <strong>NeurIPS 2025</strong>.</span>
+            </li>
+            <li>
+                <span class="date">Jul 2024</span>
+                <span>Paper on <strong>AutoGluon-Multimodal (AutoMM)</strong> accepted to <strong>AutoML 2024</strong>.</span>
+            </li>
+            <li>
+                <span class="date">Jan 2024</span>
+                <span>Paper on <strong>Controllable Diffusion Models</strong> accepted to <strong>WACV 2024</strong>.</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>📚 Selected Publications</h2>
+        
+        <div class="publication">
+            <div class="publication-title">MLZero: A Multi-Agent System for End-to-end Machine Learning Automation</div>
+            <div class="publication-authors">
+                <strong>Haoyang Fang</strong>, Boran Han, Nick Erickson, Xiyuan Zhang, et al.
+            </div>
+            <div class="publication-venue">NeurIPS 2025</div>
+            <div class="publication-links">
+                <a href="https://arxiv.org/abs/2505.13941">PDF</a>
+                <a href="https://project-mlzero.github.io/">Project Page</a>
+                <a href="https://github.com/FANGAreNotGnu/MLZero">Code</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">AutoGluon-Multimodal (AutoMM): Supercharging multimodal AutoML with foundation models</div>
+            <div class="publication-authors">
+                Zhiqiang Tang, <strong>Haoyang Fang</strong>, Su Zhou, Taojiannan Yang, Zihan Zhong, et al.
+            </div>
+            <div class="publication-venue">AutoML 2024</div>
+            <div class="publication-links">
+                <a href="#">PDF</a>
+                <a href="https://github.com/awslabs/autogluon">Code</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">Data augmentation for object detection via controllable diffusion models</div>
+            <div class="publication-authors">
+                <strong>Haoyang Fang</strong>, Boran Han, Shuai Zhang, Su Zhou, Cuixiong Hu, Wen-Ming Ye
+            </div>
+            <div class="publication-venue">WACV 2024</div>
+            <div class="publication-links">
+                <a href="https://openaccess.thecvf.com/content/WACV2024/html/Fang_Data_Augmentation_for_Object_Detection_via_Controllable_Diffusion_Models_WACV_2024_paper.html">PDF</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">A transformer-based substitute recommendation model incorporating weakly supervised customer behavior data</div>
+            <div class="publication-authors">
+                Wenting Ye, Derek Yang, Shuai Zhao, <strong>Haoyang Fang</strong>, Xingjian Shi, Naveen Neppalli
+            </div>
+            <div class="publication-venue">SIGIR 2023</div>
+            <div class="publication-links">
+                <a href="#">PDF</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>🎓 Education</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 10px;">
+                <strong>Ph.D. / M.S. in Computer Science</strong> <br>
+                <span style="color: #666;">University Name, Year - Year</span>
+            </li>
+            <li>
+                <strong>B.S. in Computer Science</strong> <br>
+                <span style="color: #666;">University Name, Year - Year</span>
+            </li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
